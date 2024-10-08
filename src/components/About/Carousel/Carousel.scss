@@ -44,7 +44,7 @@
     padding: 10px;
     padding-left: 16px;
     transition: transform 0.3s ease-in-out;
-    background-color: rgba(151, 148, 148, 0.2);
+    background: linear-gradient(rgba(151, 148, 148, 0.2),rgba(151, 148, 148, 0.2));
     line-height: 1.75rem;
     z-index: 2;
   }
@@ -58,13 +58,6 @@
   .carousel__img:hover {
     transform: scale(1.05);
   }
-
-//   .text-box{
-//     position: relative;
-//     left: 4px;
-//     background-color: black;
-//     z-index: -1;
-//   }
 
   .invisible{
     display: none;

@@ -6,7 +6,7 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    justify-content: space-between;
     @include tablet{
         display: flex;
         flex-direction: row;
@@ -17,14 +17,14 @@
     &__title-body{
         display: flex;
         flex-direction: column;
-        gap: 48px;
+        gap: 40px;
         padding-top: 24px;
         @include tablet{
             gap: 24px;
             width: 50%;
         }
     }
-    
+
     &__title{
         color: white;
         text-align: left;
@@ -43,9 +43,47 @@
     &__body{
         font-family: 'Montserrat';
         color:white;
+        padding-top: 24px;
         @include tablet{
             width: 50%;
             text-align: right;
         }
+    }
+}
+
+.color-pallet{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+    height: 20px;
+    margin-top: 40px;
+    &--red{
+        width: 60px;
+        background-color: $deep-red;
+    }
+    &--brown{
+        width: 60px;
+        background-color: $brown;
+    }
+    &--slate{
+        width: 60px;
+        background-color: $slate;
+    }
+    &--taupe{
+        width: 60px;
+        background-color: $taupe;
+    }
+    &--darkBrown{
+        width: 60px;
+        background-color: $dark-brown;
+    }
+    &--lilac{
+        width: 60px;
+        background-color: $lilac;
+    }
+    &--grey{
+        width: 60px;
+        background-color: $grey;
     }
 }
