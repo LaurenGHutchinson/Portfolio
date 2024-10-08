@@ -1,0 +1,51 @@
+@use '../../partials/fonts' as*;
+@use '../../partials/variables' as*;
+@use '../../partials/mixins' as*;
+
+.hero-text{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 48px;
+    }
+    &__title-body{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 24px;
+        @include tablet{
+            gap: 24px;
+            width: 50%;
+        }
+    }
+    
+    &__title{
+        color: white;
+        text-align: left;
+        font-size: 70px;
+        text-shadow: 2px 2px 10px black;
+    }
+    &__title--modern{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: white;
+        text-align: left;
+        font-size: 70px;
+        text-shadow: 2px 2px 10px black;
+    }
+
+    &__body{
+        font-family: 'Montserrat';
+        color:white;
+        @include tablet{
+            width: 50%;
+            text-align: right;
+        }
+    }
+}

@@ -7,12 +7,15 @@ import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
+import HeroText from './components/HeroText/HeroText.jsx'
 
 function App() {
 
   return (
     <>
       <Header />
+      <Hero />
+      <HeroText />
         
   
     </>
