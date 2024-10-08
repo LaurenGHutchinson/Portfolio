@@ -1,11 +1,13 @@
 import React from 'react'
 import './Hero.scss'
+import HeroImg from '../../assets/Michaelangelo.png'
 
 
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className="hero">
+    </div>
   )
 }
 

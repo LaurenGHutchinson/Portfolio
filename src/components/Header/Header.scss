@@ -12,13 +12,11 @@
     &__nav{
         display: flex;
         flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 8px;
+        justify-content: space-evenly;
         font-family: "Montserrat Light";
-    }
-
-    &__nav-item{
-        padding-bottom: 8px;
     }
 
     &__nav-item:hover{

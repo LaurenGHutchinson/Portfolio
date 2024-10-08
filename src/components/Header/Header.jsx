@@ -7,10 +7,10 @@ function Header() {
     <div className="header">
       <Logo />
       <nav className="header__nav">
-        <h2 className="header__nav-item">Home</h2>
-        <h2 className="header__nav-item">About</h2>
-        <h2 className="header__nav-item">Projects</h2>
-        <h2 className="header__nav-item">Contact</h2>
+        <h3 className="header__nav-item">Home</h3>
+        <h3 className="header__nav-item">About</h3>
+        <h3 className="header__nav-item">Projects</h3>
+        <h3 className="header__nav-item">Contact</h3>
       </nav>
 
     </div>
