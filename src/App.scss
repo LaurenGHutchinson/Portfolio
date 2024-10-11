@@ -50,3 +50,13 @@ h4{
     line-height: 22px;
   }
 }
+
+.labels{
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  @include tablet{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
