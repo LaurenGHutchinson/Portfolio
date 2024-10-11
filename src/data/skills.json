@@ -1,0 +1,46 @@
+[
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C++",
+        "Ladder Logic"
+      ]
+    },
+    {
+      "name": "'Software Dev'",
+      "skills": [
+        "HTML",
+        "CSS/SCSS",
+        "React",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "Knex.js",
+        "Axios",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Databases",
+      "skills": [
+        "MYSQL"
+      ]
+    },
+    {
+      "name": "Softwares",
+      "skills": [
+        "Version Control (Git/GitHub)",
+        "Postman/ThunderClient",
+        "Heroku",
+        "Netlify",
+        "Agile Development",
+        "SolidWorks",
+        "Siemens",
+        "Axios",
+        "REST APIs"
+      ]
+    }
+  ]

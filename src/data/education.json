@@ -1,0 +1,18 @@
+[
+    
+    {
+          "institute": "BrainStation",
+          "program": "Diploma, Software Engineering",
+          "time": "July 2024 - September 2024"
+        },
+        {
+          "institute": "University of Victoria",
+          "program": "Degree, Mechanical Engineering",
+          "time": "Sept 2020 - April 2023"
+        },
+        {
+          "institute": "Camosun College",
+          "program": "Diploma, Mechanical Engineering Technology",
+          "time": "Sept 2017 - Sept 2020"
+        }
+]
