@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import Picture from '../../assets/Lauren-profile-square.png'
+import Picture from '../../assets/lauren-profile-square.png'
 import Carousel from './Carousel/Carousel'
 
 
