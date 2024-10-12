@@ -1,0 +1,65 @@
+@use '../../../partials/fonts';
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 16px;
+  }
+
+.projects-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-right:24px;
+
+    &__text {
+      width: 100%;
+      height: auto;
+      display: block;
+      padding-top: 16px;
+      transition: transform 0.3s ease-in-out;
+      // background: linear-gradient(rgba(151, 148, 148, 0.2),rgba(151, 148, 148, 0.2));
+      line-height: 1.75rem;
+      z-index: 2;
+    }
+    &__btn {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.5rem;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      z-index: 1;
+      transition: background-color 0.3s;
+  }
+
+  &__section{
+    text-decoration: underline;
+    padding-right: 95%;
+  }
+  &__btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__btn--prev {
+    right: 0;
+  }
+
+  &__btn--next {
+    right: 0;
+  }
+}
+
+  .carousel__img:hover {
+    transform: scale(1.05);
+  }
+
+  .invisible{
+    display: none;
+  }
+  

@@ -4,7 +4,6 @@ import './Carousel.scss'
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0); // Corrected useState syntax
   const [activeText, setActiveText] = useState(); // Corrected useState syntax
-  const [initialHeadline, setInitialHeadline] = useState();
 
   const aboutText = [
     'I’m a mechanical engineer turned full stack software developer, passionate about blending technical precision with artistic design. With experience guiding projects from concept to production, I now focus on creating efficient, user-friendly digital solutions. Inspired by the Renaissance, I believe great design is where form and function meet to create beautiful, impactful experiences.',

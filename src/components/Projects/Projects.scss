@@ -32,7 +32,7 @@
         position: relative;
         background-color: $deep-red;
         padding-top: 0;
-        padding-bottom: 16px;
+        padding-bottom: 24px;
       }
       &__title {
         padding:0 16px 16px 16px;
@@ -60,16 +60,16 @@
         }
     
         &--1{
-          background: url('../../assets/button-11.jpg');
+          background: url('../../assets/button-14.jpg');
           background-size: cover;
         }
         &--2{
-          background: url('../../assets/button-12.jpg');
+          background: url('../../assets/button-15.jpg');
           background-size: cover;
           background-position: center;
         }
         &--3{
-          background: url('../../assets/button-13.jpg');
+          background: url('../../assets/button-16.jpg');
           background-size: cover;
           background-position: center;
         }
@@ -82,11 +82,30 @@
       }
       
       &__card{
-        margin-left: 16px;
-        background-color:rgba(0, 0, 0, .7);
+        margin-right: 16px;
+        background-color:#d8cfc4;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+      }
+
+      &__card-title{
+        writing-mode: vertical-lr; /* Vertical text */
+        transform: rotate(180deg); /* Flip the text */
+        white-space: nowrap; /* Prevent text wrapping */
+        display: flex;
+        justify-content: flex-end; /* Align the text from bottom */
+        align-items: flex-start; /* Align the text on the left */
+        height: auto; /* Let the height be determined by the content */
+        padding: 16px 8px; /* Adjust padding */
+        margin: 0; /* Remove margin */
+        flex-grow: 0; /* Prevents it from expanding larger than content */
+        color: $deep-red;
+      }
+
+      &__image{
+        width: 75%;
+        margin: auto;
       }
   }
 
