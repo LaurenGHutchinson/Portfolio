@@ -1,89 +1,14 @@
 import React from 'react'
 import './Experience.scss'
 import {useState, useEffect} from 'react'
-
-const skills = [
-  {
-    name: 'Programming Languages',
-    skills: [
-      'JavaScript',
-      'TypeScript',
-      'Python',
-      'C++',
-      'Ladder Logic'
-    ]
-  },
-  {
-    name: 'Software Dev',
-    skills: [
-      'HTML',
-      'CSS/SCSS',
-      'React',
-      'Vite',
-      'Node.js',
-      'Express.js',
-      'Knex.js',
-      'Axios',
-      'REST APIs'
-    ]
-  },
-  {
-    name: 'Databases',
-    skills: [
-      'MYSQL'
-    ]
-  },
-  {
-    name: 'Softwares',
-    skills: [
-      'Version Control (Git/GitHub)',
-      'Postman/ThunderClient',
-      'Heroku',
-      'Netlify',
-      'Agile Development',
-      'SolidWorks',
-      'Siemens',
-      'Axios',
-      'REST APIs'
-    ]
-  }
-];
-
-const education = [
-  {
-    institute: 'BrainStation',
-    program: 'Diploma, Software Engineering',
-    time: 'July 2024 - September 2024'
-  },
-  {
-    institute: 'University of Victoria',
-    program: 'Degree, Mechanical Engineering',
-    time: 'Sept 2020 - April 2023'
-  },
-  {
-    institute: 'Camosun College',
-    program: 'Diploma, Mechanical Engineering Technology',
-    time: 'Sept 2017 - Sept 2020'
-  }
-]
-
-const experience = [
-  {
-    company: 'Planar Motor Inc',
-    role: 'Mechatronics Engineer',
-    time: 'Feb 2024 - July 2024'
-  },
-  {
-    company: 'Genesis Motion Solutions',
-    role: 'Design Engineer/Quality Engineer',
-    time: 'Jan 2022 - Jan 2024'
-  }
-]
+import educationData from '../../data/education.json'
+import experienceData from '../../data/experience.json'
+import skillsData from '../../data/skills.json'
 
 
 function Experience() {
 
-  const [selectedTopic, setSelectedTopic] = useState(skills[0].name);
+  const [selectedTopic, setSelectedTopic] = useState(skillsData[0].name);
   const [selectedSkills, setSelectedSkills] = useState([]);
   const [category, setCategory] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Skills');
@@ -91,16 +16,14 @@ function Experience() {
   const categories = ['Skills','Experience','Education']
 
   useEffect(() => {
-    const skillSet = skills.filter((skill) => skill.name === selectedTopic)
+    const skillSet = skillsData.filter((skill) => skill.name === selectedTopic)
     const skillSetArray = skillSet[0].skills;
     setSelectedSkills(skillSetArray)
   }, [selectedTopic])
 
-  
-
   const handleClick = (e) => {
     setSelectedTopic(e.target.value);
-    const skillSet = skills.filter((skill) => skill.name === selectedTopic)
+    const skillSet = skillsData.filter((skill) => skill.name === selectedTopic)
     const skillSetArray = skillSet[0].skills;
     setSelectedSkills(skillSetArray)
   }
@@ -112,13 +35,13 @@ function Experience() {
 
   useEffect(()=>{
     if (selectedCategory === 'Education') {
-      const categoryData = education;
+      const categoryData = educationData;
       console.log(categoryData)
       setCategory(categoryData)
     }
 
     if(selectedCategory === 'Experience') {
-      const categoryData = experience;
+      const categoryData = experienceData;
       console.log(categoryData)
       setCategory(categoryData)
     }
@@ -144,7 +67,7 @@ function Experience() {
             {categories.map((category, index) => (
               <button
               key={category}
-              className={`experience__item experience__item--${index + 1} h4`}
+              className={`experience__item experience-button experience__item--${index + 1} h4`}
               value={category}
               onClick={handleSectionClick}
               >
@@ -153,7 +76,7 @@ function Experience() {
             ))}
           </div>
           <div className={`button button-array ${selectedCategory === 'Education' || selectedCategory === 'Experience' ? 'invisible': ''}`}>
-            {skills.map((skill)=> (
+            {skillsData.map((skill)=> (
               <button
               key={skill.name}
               value={skill.name}

@@ -60,3 +60,8 @@ h4{
     line-height: 20px;
   }
 }
+
+button:focus{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
