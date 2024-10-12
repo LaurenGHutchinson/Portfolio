@@ -6,13 +6,29 @@ import projectData from '../../../data/projects.json'
 function ProjectsCarousel({selectedSector}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [filteredProjects, setFilteredProjects] = useState([]); // State for filtered data
+  const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
     const sectorToFilter = selectedSector || "Software Engineering";
     const projectsList = projectData.filter((project) => project.type === sectorToFilter);
     setFilteredProjects(projectsList);
     setActiveIndex(0);
+    setImageIndex(0);
   }, [selectedSector]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (filteredProjects.length > 0) {
+        const currentImages = filteredProjects[activeIndex].img;
+        setImageIndex((prevImageIndex) =>
+          prevImageIndex === currentImages.length - 1 ? 0 : prevImageIndex + 1
+        );
+      }
+    }, 5000); // Change the interval time (3000ms = 3 seconds)
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [filteredProjects, activeIndex]);
 
   if (filteredProjects.length === 0) {
     return <p>Loading projects...</p>;
@@ -31,17 +47,19 @@ function ProjectsCarousel({selectedSector}) {
     );
   };
 
+  const currentProject = filteredProjects[activeIndex];
+
   return (
     <div className="projects-carousel">
-        <p className="projects-carousel__text text-box">{filteredProjects[activeIndex].name}</p>
-        <img className="projects-carousel__image" src={filteredProjects[activeIndex].img}/>
-        <p><span className="projects-carousel__section">Description:</span>{filteredProjects[activeIndex].description}</p>
-        <p><span className="projects-carousel__section">Skills:</span>{filteredProjects[activeIndex].skills}</p>
+        <p className="projects-carousel__text text-box">{currentProject.name}</p>
+        <img className="projects-carousel__image" src={currentProject.img[imageIndex]}/>
+        <p><span className="projects-carousel__section">Description:<br/></span>{currentProject.description}</p>
+        <p><span className="projects-carousel__section">Skills:<br/></span>{currentProject.skills}</p>
       <div className='buttons'>
         <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
             &lt;
         </button>
-        <p>LEARN MORE</p>
+        <p></p>
         <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
             &gt;
         </button>

@@ -2,15 +2,23 @@
     {
         "type": "Software Engineering",
         "name": "ByteBack - Interview Prep Tool",
-        "img": "src/assets/Landing-Page.png",
+        "img": [
+            "src/assets/Landing-Page.png",
+            "src/assets/Quiz-Page.png",
+            "src/assets/Quiz-Results-Page.png",
+            "src/assets/Debugger-Page.png",
+            "src/assets/Code-Challenge-Page.png"
+        ],   
         "description": " ByteBack-Edu is an educational prep tool that aids tech candidates prepare for technical interviews through customized, skill specific quizes, and algorithm/debugging challenges in its integrated live code editor. Interviews bite, ByteBack!",
         "skills": "HTML, SCSS, JavaScript, React, Axios, Express.js, MySQL, Chakra UI"    
     },
     {
         "type": "Software Engineering",
         "name": "Persephone's Garden",
-        "img": "",
-        "description": "Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
+        "img": [
+            "/src/assets/PersephonesGarden.png"
+        ],
+        "description": " Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
         "skills": "HTML, SCSS, JavaScript"    
     },
     {
