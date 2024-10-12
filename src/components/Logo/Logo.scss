@@ -1,0 +1,34 @@
+@use '../../partials/fonts' as*;
+@use '../../partials/variables' as*;
+
+.logo-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+}
+
+.name{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__upper{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 6px;
+    }
+
+    &__first{
+        font-size: 50px;
+    }
+
+    &__letter{
+        font-family: 'Roxborough';
+        font-size: 20px;
+    }   
+    &__last{
+        font-weight: 400;
+    }
+}

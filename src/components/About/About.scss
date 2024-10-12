@@ -1,0 +1,57 @@
+@use '../../partials/variables' as *;
+@use '../../partials/fonts' as *;
+
+.about{
+    &__body{
+        display: flex;
+        flex-direction: column;
+        background-color: $deep-red;
+        width: 100%;
+        border-top: 2px solid black;
+        padding-bottom: 16px;
+    }
+
+    &__intro{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 24px;
+        margin: 16px;
+        border-bottom: 1px solid rgb(138, 66, 66);
+    }
+
+    &__intro-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__picture{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-radius: 51%;
+        border: 1px solid rgb(228, 161, 161);
+        margin-bottom: 24px;
+    }
+
+    &__title{
+        padding-bottom: 16px;
+    }
+
+    &__intro-line{
+        font-size: 20px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.first-line{
+    font-family: 'Roxborough';
+    font-size: 50px;
+    color: rgb(228, 161, 161);
+}
