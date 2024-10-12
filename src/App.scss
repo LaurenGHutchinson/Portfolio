@@ -1,0 +1,67 @@
+@use './partials/fonts' as *;
+@use './partials/mixins' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat';
+}
+
+h1{
+  font-family: 'Roxborough';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  @include tablet{
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
+h2{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  @include tablet{
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+h3{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  @include tablet{
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h4{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  @include tablet{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.labels{
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  @include tablet{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+button:focus{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
