@@ -2,17 +2,10 @@
 @use '../../partials/variables' as*;
 @use '../../partials/mixins' as*;
 
-.projects__body {
-    position: relative;
-    background-color: #d8cfc4; /* Or the background color of your section */
-    padding-top: 0;
-    height: 100px;
-  }
-  
-  .svg-wrapper {
+.svg-wrapper {
     position: relative;
     width: 100%;
-    height: 40px; /* Adjust this height as per your design needs */
+    height: 40px;
     overflow: hidden;
   }
   
@@ -21,16 +14,82 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Ensures the SVG spans the full width and height */
+    height: 100px;
   }
-  
-  .projects__title {
-    padding:0 16px;
-    background-color: $deep-red;
-    color: #d8cfc4; /* Or any other styling */
+.projects{
+    position: relative;
+    background-color: #d8cfc4;
+    padding-top: 0;
+
+    &__list{
+        background-color: $deep-red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 16px;
+      }
+      &__body {
+        position: relative;
+        background-color: $deep-red;
+        padding-top: 0;
+        padding-bottom: 16px;
+      }
+      &__title {
+        padding:0 16px 16px 16px;
+        background-color: $deep-red;
+        color: #d8cfc4;
+      }
+
+      &__item{
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        width: 30%;
+        color: rgba(255, 255, 255, 0);
+        text-align: center;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    
+        &:hover{
+          background: $deep-red;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        &:active{
+            background-color: $deep-red;
+        }
+    
+        &--1{
+          background: url('../../assets/button-11.jpg');
+          background-size: cover;
+        }
+        &--2{
+          background: url('../../assets/button-12.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+        &--3{
+          background: url('../../assets/button-13.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      &__card-body{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      &__card{
+        margin-left: 16px;
+        background-color:rgba(0, 0, 0, .7);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
   }
 
-  .projects__item{
-    background-color: $deep-red;
-    height: 75vh;
-  }
+.projects-button:focus{
+    background: $deep-red;
+}

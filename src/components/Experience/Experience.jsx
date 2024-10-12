@@ -67,7 +67,7 @@ function Experience() {
             {categories.map((category, index) => (
               <button
               key={category}
-              className={`experience__item experience__item--${index + 1} h4`}
+              className={`experience__item experience-button experience__item--${index + 1} h4`}
               value={category}
               onClick={handleSectionClick}
               >
