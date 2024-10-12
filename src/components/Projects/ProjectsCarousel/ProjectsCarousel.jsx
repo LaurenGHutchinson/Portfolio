@@ -56,11 +56,11 @@ function ProjectsCarousel({selectedSector}) {
         <p><span className="projects-carousel__section">Description:<br/></span>{currentProject.description}</p>
         <p><span className="projects-carousel__section">Skills:<br/></span>{currentProject.skills}</p>
       <div className='buttons'>
-        <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
+        <button onClick={prevSlide} className="projects-carousel__btn carousel__btn--prev">
             &lt;
         </button>
         <p></p>
-        <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
+        <button onClick={nextSlide} className="projects-carousel__btn carousel__btn--next">
             &gt;
         </button>
       </div>
