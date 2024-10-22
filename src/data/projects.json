@@ -3,11 +3,11 @@
         "type": "Software Engineering",
         "name": "ByteBack - Interview Prep Tool",
         "img": [
-            "src/assets/Landing-Page.png",
-            "src/assets/Quiz-Page.png",
-            "src/assets/Quiz-Results-Page.png",
-            "src/assets/Debugger-Page.png",
-            "src/assets/Code-Challenge-Page.png"
+            "src/assets/projects/Landing-Page.png",
+            "src/assets/projects/Quiz-Page.png",
+            "src/assets/projects/Quiz-Results-Page.png",
+            "src/assets/projects/Debugger-Page.png",
+            "src/assets/projects/Code-Challenge-Page.png"
         ],   
         "description": " ByteBack-Edu is an educational prep tool that aids tech candidates prepare for technical interviews through customized, skill specific quizes, and algorithm/debugging challenges in its integrated live code editor. Interviews bite, ByteBack!",
         "skills": "HTML, SCSS, JavaScript, React, Axios, Express.js, MySQL, Chakra UI"    
@@ -16,7 +16,7 @@
         "type": "Software Engineering",
         "name": "Persephone's Garden",
         "img": [
-            "/src/assets/PersephonesGarden.png"
+            "/src/assets/projects/PersephonesGarden.png"
         ],
         "description": " Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
         "skills": "HTML, SCSS, JavaScript"    
@@ -24,7 +24,13 @@
     {
         "type": "Mechanical Engineering",
         "name": "Forced Convection Cooling Module",
-        "img": "",
+        "img": [
+            "/src/assets/projects/exploded-fccm.jpg",
+            "/src/assets/projects/cut-flow.png",
+            "/src/assets/projects/flow-analysis-fccm.png",
+            "/src/assets/projects/heat-analysis-fccm.png"
+
+        ],
         "description": "Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
         "skills": "HTML, SCSS, JavaScript"    
     },
