@@ -24,15 +24,33 @@
     {
         "type": "Mechanical Engineering",
         "name": "Forced Convection Cooling Module",
-        "img": "",
-        "description": "Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
-        "skills": "HTML, SCSS, JavaScript"    
+        "img": [
+            "/src/assets/exploded-fccm.jpg",
+            "/src/assets/cut-flow.png",
+            "/src/assets/flow-analysis-fccm.png",
+            "/src/assets/heat-analysis-fccm.png"
+        ],
+        "description": "The FCCM is a cost effective, and modular addition to the direct drive motors produced by Genesis Motion Solutions. Using the principles of forced convection and conduction, the module could replace the end-cover of any motor, providing superior heat dissipation leading to a potential performance increase of 2X the rated continuous torque. This cost effective solution weighed less than 1kg, cost less than $300 to produce, and added less than 50mm of length to the backside of the motor.",
+        "skills": "SolidWorks CAD, SolidWorks Flow Analysis, Rapid Prototyping, Siemens NX"    
+    },    
+    {
+        "type": "Mechanical Engineering",
+        "name": "Precision Weighing Environment for Direct Metal Laser Sintering (DMLS)",
+        "img": [
+            "/src/assets/deposit-wiper-blade.png",
+            "/src/assets/Deposit-test-chamber.png"
+
+        ],
+        "description": "This precision weighing environment was created to accurately weigh single layers of metallic powder (Ti-6AL-4V) used in Direct Metal Laser Sintering, or 3D metal printing, to determine the final density of the part. The key features of the design were the adjustable scraper with 6 angles of attack, with a height capable of being adjusted in 1um increments, and a vacuum sealed enclosure with an internal air circulation path and capability for nitrogen purging to reduce accidental combustion of aerosolized powder.",
+        "skills": "SolidWorks CAD, SolidWorks Flow Analysis, Advance Manufacturing, Test Design"    
     },
     {
         "type": "Art",
-        "name": "Surf, Swim, Sun",
-        "img": "",
-        "description": "Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
-        "skills": "HTML, SCSS, JavaScript"    
+        "name": "Sea to Sky",
+        "img": [
+            "src/assets/s2s-logo.jpg"
+        ],
+        "description": "This logo was created to represent a fictional outdoor company centered around the roots of West Coast outdoor living.",
+        "skills": "Adobe Photoshop, Adobe Illustrator"    
     }
 ]

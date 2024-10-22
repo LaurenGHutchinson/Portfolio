@@ -52,7 +52,9 @@ function ProjectsCarousel({selectedSector}) {
   return (
     <div className="projects-carousel">
         <p className="projects-carousel__text text-box">{currentProject.name}</p>
-        <img className="projects-carousel__image" src={currentProject.img[imageIndex]}/>
+        <div className="projects-carousel__image-container"> 
+          <img className="projects-carousel__image" src={currentProject.img[imageIndex]}/>
+        </div>
         <p><span className="projects-carousel__section">Description:<br/></span>{currentProject.description}</p>
         <p><span className="projects-carousel__section">Skills:<br/></span>{currentProject.skills}</p>
       <div className='buttons'>
