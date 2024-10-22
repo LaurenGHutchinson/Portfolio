@@ -3,11 +3,11 @@
         "type": "Software Engineering",
         "name": "ByteBack - Interview Prep Tool",
         "img": [
-            "src/assets/projects/Landing-Page.png",
-            "src/assets/projects/Quiz-Page.png",
-            "src/assets/projects/Quiz-Results-Page.png",
-            "src/assets/projects/Debugger-Page.png",
-            "src/assets/projects/Code-Challenge-Page.png"
+            "src/assets/Landing-Page.png",
+            "src/assets/Quiz-Page.png",
+            "src/assets/Quiz-Results-Page.png",
+            "src/assets/Debugger-Page.png",
+            "src/assets/Code-Challenge-Page.png"
         ],   
         "description": " ByteBack-Edu is an educational prep tool that aids tech candidates prepare for technical interviews through customized, skill specific quizes, and algorithm/debugging challenges in its integrated live code editor. Interviews bite, ByteBack!",
         "skills": "HTML, SCSS, JavaScript, React, Axios, Express.js, MySQL, Chakra UI"    
@@ -16,7 +16,7 @@
         "type": "Software Engineering",
         "name": "Persephone's Garden",
         "img": [
-            "/src/assets/projects/PersephonesGarden.png"
+            "/src/assets/PersephonesGarden.png"
         ],
         "description": " Sometimes we just need to touch grass. Grow your own ASCII based garden with Persephone's Garden! Plant, water, and grow your seeds to a full flower.",
         "skills": "HTML, SCSS, JavaScript"    
@@ -25,11 +25,10 @@
         "type": "Mechanical Engineering",
         "name": "Forced Convection Cooling Module",
         "img": [
-            "/src/assets/projects/exploded-fccm.jpg",
-            "/src/assets/projects/cut-flow.png",
-            "/src/assets/projects/flow-analysis-fccm.png",
-            "/src/assets/projects/heat-analysis-fccm.png"
-
+            "/src/assets/exploded-fccm.jpg",
+            "/src/assets/cut-flow.png",
+            "/src/assets/flow-analysis-fccm.png",
+            "/src/assets/heat-analysis-fccm.png"
         ],
         "description": "The FCCM is a cost effective, and modular addition to the direct drive motors produced by Genesis Motion Solutions. Using the principles of forced convection and conduction, the module could replace the end-cover of any motor, providing superior heat dissipation leading to a potential performance increase of 2X the rated continuous torque. This cost effective solution weighed less than 1kg, cost less than $300 to produce, and added less than 50mm of length to the backside of the motor.",
         "skills": "SolidWorks CAD, SolidWorks Flow Analysis, Rapid Prototyping, Siemens NX"    
@@ -38,8 +37,8 @@
         "type": "Mechanical Engineering",
         "name": "Precision Weighing Environment for Direct Metal Laser Sintering (DMLS)",
         "img": [
-            "/src/assets/projects/deposit-wiper-blade.png",
-            "/src/assets/projects/Deposit-test-chamber.png"
+            "/src/assets/deposit-wiper-blade.png",
+            "/src/assets/Deposit-test-chamber.png"
 
         ],
         "description": "This precision weighing environment was created to accurately weigh single layers of metallic powder (Ti-6AL-4V) used in Direct Metal Laser Sintering, or 3D metal printing, to determine the final density of the part. The key features of the design were the adjustable scraper with 6 angles of attack, with a height capable of being adjusted in 1um increments, and a vacuum sealed enclosure with an internal air circulation path and capability for nitrogen purging to reduce accidental combustion of aerosolized powder.",
@@ -49,7 +48,7 @@
         "type": "Art",
         "name": "Sea to Sky",
         "img": [
-            "src/assets/projects/s2s-logo.jpg"
+            "src/assets/s2s-logo.jpg"
         ],
         "description": "This logo was created to represent a fictional outdoor company centered around the roots of West Coast outdoor living.",
         "skills": "Adobe Photoshop, Adobe Illustrator"    
