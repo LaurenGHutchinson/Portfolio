@@ -6,7 +6,7 @@ import Carousel from './Carousel/Carousel'
 
 function About() {
   return (
-    <div className="about__body">
+    <div id="about" className="about__body">
       <div className="about__intro">
         <img className="about__picture" src={Picture} />
         <div className="about__intro-name">

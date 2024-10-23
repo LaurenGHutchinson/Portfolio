@@ -49,7 +49,7 @@ function Experience() {
 
   return (
     <>
-      <div className="experience">
+      <div id="experience" className="experience">
         <div className="svg-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"

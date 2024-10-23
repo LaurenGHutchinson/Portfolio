@@ -40,7 +40,7 @@ function ContactForm() {
 
   return (
     <>
-      <div className="contact">
+      <div id="contact" className="contact">
             <div className="svg-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
