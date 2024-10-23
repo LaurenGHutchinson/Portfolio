@@ -17,7 +17,7 @@ function Projects() {
 
   return (
     <>
-      <div className="projects">
+      <div id="projects" className="projects">
         <div className="svg-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"

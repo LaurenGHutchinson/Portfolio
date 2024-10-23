@@ -1,5 +1,6 @@
 @use '../../partials/fonts' as*;
 @use '../../partials/variables' as*;
+@use '../../partials/mixins' as*;
 
 .logo-body{
     display: flex;
@@ -7,6 +8,10 @@
     width: 100%;
     align-items: center;
     gap: 16px;
+    @include tablet{
+        width: 60%;
+        gap: 8px;
+    }
 }
 
 .name{
@@ -18,17 +23,30 @@
         flex-direction: row;
         align-items: baseline;
         gap: 6px;
+
     }
 
     &__first{
         font-size: 50px;
+        @include tablet{
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
 
     &__letter{
         font-family: 'Roxborough';
         font-size: 20px;
+        @include tablet{
+            font-size: 16px;
+            line-height: 18px;
+        }
     }   
     &__last{
         font-weight: 400;
+        @include tablet{
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 }
