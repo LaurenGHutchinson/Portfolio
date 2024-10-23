@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 48px;
+        gap: 48px;
     }
     &__title-body{
         display: flex;
@@ -22,6 +23,14 @@
         @include tablet{
             gap: 24px;
             width: 50%;
+        }
+    }
+    &__heading-and-color{
+        width: 80%;
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
     }
 
@@ -42,10 +51,14 @@
 
     &__body{
         font-family: 'Montserrat';
-        color:white;
-        padding-top: 24px;
+        color:black;
+        padding: 16px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.7) ;
+        height: 110px;
+        z-index: 2;
         @include tablet{
-            width: 50%;
+            width: 100%;
             text-align: right;
         }
     }
@@ -54,36 +67,49 @@
 .color-pallet{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    gap: 8px;
+    justify-content: space-between;
+    // width: 80%;
     height: 20px;
     margin-top: 40px;
+    z-index: -1;
+    @include tablet{
+        width: 100%;
+        z-index: 1;
+    }
+
     &--red{
-        width: 60px;
+        width: 13%;
         background-color: $deep-red;
+        height: 140px;
     }
     &--brown{
-        width: 60px;
+        width: 13%;
         background-color: $brown;
+        height: 140px;
     }
     &--slate{
-        width: 60px;
+        width: 13%;
         background-color: $slate;
+        height: 140px;
     }
     &--taupe{
-        width: 60px;
+        width: 13%;
         background-color: $taupe;
+        height: 140px;
     }
     &--darkBrown{
-        width: 60px;
+        width: 13%;
         background-color: $dark-brown;
+        height: 140px;
     }
     &--lilac{
-        width: 60px;
+        width: 13%;
         background-color: $lilac;
+        height: 140px;
     }
     &--grey{
-        width: 60px;
+        width: 13%;
         background-color: $grey;
+        height: 140px;
     }
 }
