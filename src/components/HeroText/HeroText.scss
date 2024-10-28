@@ -27,6 +27,7 @@
     }
     &__heading-and-color{
         width: 80%;
+        padding-bottom: 16px;
         @include tablet{
             display: flex;
             flex-direction: column;
@@ -50,6 +51,8 @@
     }
 
     &__body{
+        display: flex;
+        align-items: center;
         font-family: 'Montserrat';
         color:black;
         padding: 16px;
@@ -58,6 +61,7 @@
         height: 110px;
         z-index: 2;
         @include tablet{
+            height: 125px;
             width: 100%;
             text-align: right;
         }
@@ -68,9 +72,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // width: 80%;
     height: 20px;
     margin-top: 40px;
+    padding-bottom: 16px;
     z-index: -1;
     @include tablet{
         width: 100%;
@@ -80,36 +84,57 @@
     &--red{
         width: 13%;
         background-color: $deep-red;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--brown{
         width: 13%;
         background-color: $brown;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--slate{
         width: 13%;
         background-color: $slate;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--taupe{
         width: 13%;
         background-color: $taupe;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--darkBrown{
         width: 13%;
         background-color: $dark-brown;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--lilac{
         width: 13%;
         background-color: $lilac;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
     &--grey{
         width: 13%;
         background-color: $grey;
-        height: 140px;
+        height: 150px;
+        @include tablet{
+            height: 165px;
+        }
     }
 }
