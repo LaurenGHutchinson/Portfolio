@@ -1,4 +1,5 @@
-@use '../../../partials/fonts';
+@use '../../../partials/fonts' as *;
+@use '../../../partials/mixins' as *;
 
 .buttons{
     display: flex;
@@ -53,6 +54,9 @@
   .carousel__initial-text{
     text-transform: uppercase;
     padding-left: 16px;
+    @include tablet{
+      display:none;
+    }
 
   }
 
