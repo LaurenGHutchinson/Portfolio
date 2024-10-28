@@ -1,6 +1,11 @@
 @use '../../partials/variables' as *;
 @use '../../partials/fonts' as *;
+@use '../../partials/mixins' as *;
 
+span{
+    font-weight: bold;
+    font-family: 'Montserrat Italic'
+}
 .about{
     &__body{
         display: flex;
@@ -16,24 +21,81 @@
         flex-direction: row;
         justify-content: flex-start;
         gap: 24px;
-        margin: 16px;
+        margin: 24px;
         border-bottom: 1px solid rgb(138, 66, 66);
+        @include tablet{
+            justify-content: flex-start;
+            gap: 36px;
+            margin: 48px;
+            padding-bottom:24px;
+        }
+    }
+    &__right-content{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        @include tablet{
+            justify-content: flex-start;
+        }
     }
 
     &__intro-name{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 24px;
+        gap: 16px;
+        @include tablet{
+            flex-direction: row;
+            align-items: center;
+        }
+        @include desktop{
+            flex-direction: row;
+            align-items: flex-end;
+        }
+    }
+
+    &__tablet-text{
+        @include mobile{
+            display:none;
+        }
+        line-height: 25px;
+    }
+
+    &__intro-text{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        @include desktop{
+            padding-bottom: 8px;
+        }
+    }
+
+    &__desktop-carousel{
+        width: 100%;
+        padding-top: 16px;
+        @include mobile{
+            display: none;
+        }
+        @include firmTablet{
+            display: none;
+        }
+
     }
 
     &__picture{
         display: flex;
         justify-content: center;
         width: 50%;
-        border-radius: 51%;
+        height: 50%;
+        border-radius: 50%;
         border: 1px solid rgb(228, 161, 161);
         margin-bottom: 24px;
+        @include tablet{
+            max-height: 360px;
+            max-width: 360px;
+        }
+        
     }
 
     &__title{
@@ -46,12 +108,12 @@
     &__text{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
     }
 }
 
 .first-line{
     font-family: 'Roxborough';
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(228, 161, 161);
 }
